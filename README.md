@@ -22,6 +22,15 @@ Please review the following concepts from lecture 2 before starting this lab
 * Tuples
 * Defining and using your own functions
 
+## A quick review or arithmetic operations
+* Addition:   8 + 5
+* Subtraction: 8 - 5
+* Multiplication 8 * 5
+* Division 8 / 5
+* Floor Division: 8 // 5
+* Exponent 8 ** 5
+* Modulus 8 % 5
+
 ## Defining your functions
 1. First open `lab2`
     - notice how 
