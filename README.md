@@ -22,6 +22,26 @@ Please review the following concepts from lecture 2 before starting this lab
 * Tuples
 * Defining and using your own functions
 
+## A quick review of boolean algebra
+* Boolean values are not strings!
+    * They are surrounded by quotes
+* True and False are the only values in the `bool` type
+* Boolean expressions are expressions that evaluate to True or False
+
+```    
+x == y               # x is equal to y
+x != y               # x is not equal to y
+x > y                # x is greater than y
+x < y                # x is less than y
+x >= y               # x is greater than or equal to y
+x <= y               # x is less than or equal to y
+```
+* operators such as `and` or `or` are evaluated left-to-right
+```
+not x	        # Returns True if x is True, False otherwise
+x and y	        # Returns x if x is False, y otherwise
+x or y	        # Returns y if x is False, x otherwise
+```
 ## A quick review or arithmetic operations
 * Addition:   8 + 5
 * Subtraction: 8 - 5
