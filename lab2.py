@@ -7,7 +7,8 @@ from geometry import *
 
 def full_name(first: str, mid: str, last: str) -> str:
     """Define a function that is your full name including first, middle
-    and last name"""
+    and last name
+    """
     full = first + mid + last
     return full
 
@@ -50,7 +51,8 @@ Please ask your Peer Mentors if you have any questions
 def is_even(num: int) -> bool:
     """Define a function that successfully tells you if your integer is
     odd or even or divisible by your age
-    Return true if your number is even and"""
+    Return true if your number is even and
+    """
     return False
 
 
@@ -67,11 +69,13 @@ def intersect(c1: Circle, c2: Circle) -> bool:
 def overlap(s1: Sphere, s2: Sphere) -> float:
     """given a sphere of radius R located at (0, 0, 0) and
     a sphere or radius r located at (d, 0, 0)
-    return the volume of the two spheres intersection"""
+    return the volume of the two spheres intersection
+    """
     return
 
 
 def trilateration():
     """given three spheres, find the intersection
-    points of the three spheres"""
+    points of the three spheres
+    """
     return
