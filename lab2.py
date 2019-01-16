@@ -12,7 +12,7 @@ def full_name(first: str, mid: str, last: str) -> str:
     >>> full_name('A', '', 'B')
     'A  B'
     """
-    pass # replace with your code
+    return first + mid + last
 
 
 # We will write data definitions for a 3-D position,
@@ -31,7 +31,9 @@ class Position3(NamedTuple):
     >>> p.z
     5.5
     """
-    pass # replace with your code
+    x: float
+    y: float
+    z: float
 
 
 class Sphere(NamedTuple):
@@ -47,12 +49,12 @@ class Sphere(NamedTuple):
 
 def sphere_volume(sphere: Sphere) -> float:
     """Computes the volume of a sphere."""
-    pass # replace with your code
+    return 4 * pi * ((sphere.radius ** 3) / 3)
 
 
 def sphere_surface_area(sphere: Sphere) -> float:
-    """Computes the volume of a sphere."""
-    pass # replace with your code
+    """Computes the surface area of a sphere."""
+    return 4 * pi * (sphere.radius ** 2)
 
 
 # Here we will define your own functions
@@ -67,7 +69,7 @@ def is_even(num: int) -> bool:
     >>> is_even(4)
     True
     """
-    pass # replace with your code
+    return num%2 == 0
 
 
 def deg_to_rad(deg: float) -> float:
