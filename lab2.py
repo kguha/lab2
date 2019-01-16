@@ -2,7 +2,7 @@ from math import pi
 
 from typing import NamedTuple
 
-from geometry import *
+from geometry import Circle, Position
 
 
 def full_name(first: str, mid: str, last: str) -> str:
