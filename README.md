@@ -71,16 +71,16 @@ bob = Employee(name='Bob', department='IT', salary=10000, is_remote=True)
     - Can you explain what is happening to the given Strings  
 3. Fill in the code to define the function `is_even`
     - What operators do you need?
-- Define the Position NamedTuple to represent the coordinates of a sphere
-- Now define the volume of a sphere
+4. Define the Position NamedTuple to represent the coordinates of a sphere
+5. Now define the volume of a sphere
     - Does order of operations matter? 
     - What arithmetic operations do you need?
-- Now look at the `overlap` function 
+6. Now look at the `overlap` function 
     - What exactly is it asking you to define? Look at this [WolframMathWorld](http://mathworld.wolfram.com/Sphere-SphereIntersection.html)
     for some hints
     - To speed up your calculation, how would you account for the case in which r=R?
         - How would you implement this?
-- Take some time to attempt to implement the other functions such as `contained_within` and `trilateration`
+7 Take some time to attempt to implement the other functions such as `contained_within` and `trilateration`
     - Hint: Notice that the parameters and return type for `trilateration` are empty
         - What would you fill in for the parameters and return given the description of what the function
         does in the comments. This one may be hard, so try to figure out what inputs and outputs the function
@@ -108,9 +108,9 @@ assert <condition>,<error message>
 
 If the assert evaluates the false the Python program halts and gives us an `AssertionError`
 
-Reference the short tests already written in `test_lab2`,
-write some short assertion tests to verify that you program works. Run the
-following command in the `lab2` directory to run your tests. 
+1. Reference the short tests already written in `test_lab2`,
+2. write some short assertion tests to verify that you program works. 
+3. Run the following command in the `lab2` directory to run your tests. 
 ```
 $ pipenv run pytest
 ```
