@@ -18,7 +18,7 @@ def full_name(first: str, mid: str, last: str) -> str:
 # Sphere Tuple
 
 
-class Position(NamedTuple):
+class Position3(NamedTuple):
     # Represents a 3-D position.
     x: float
 
@@ -27,18 +27,20 @@ class Sphere(NamedTuple):
     """
     Represents a sphere positioned on a 3-space.
     """
-    center: Position
+    center: Position3
     radius: float
 
-    # please define volume of a sphere
-    def volume(self) -> float:
-        # your code goes here
-        return
 
-    # please define surface area of a sphere
-    def surface_area(self) -> float:
-        # your code goes here
-        return
+# please define volume of a sphere
+def sphere_volume(sphere: Sphere) -> float:
+    # your code goes here
+    return
+
+# please define surface area of a sphere
+def sphere_surface_area(sphere: Sphere) -> float:
+    # your code goes here
+    return
+
 
 """
 Here we will define your own functions
