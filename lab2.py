@@ -6,7 +6,7 @@ from geometry import *
 
 
 
-def full_name(first: str, mid: str, last: str):
+def full_name(first: str, mid: str, last: str) -> str:
     # Define a function that is your full name including first, middle
     # and last name
     full = first + mid + last
@@ -50,31 +50,30 @@ class Sphere(NamedTuple):
 #
 
 
-def is_even(num: int):
-    # Define a function that successfully tells you if your number is odd or even or divisible by your age
-    # Return true if your number is even and
+# Define a function that successfully tells you if your integer is odd or even or divisible by your age
+# Return true if your number is even and
+def is_even(num: int) -> bool:
     return
 
 
-
-def deg_to_rad(deg: float):
-    # Define a function to convert degrees to radian.
+# Define a function to convert degrees to radian
+def deg_to_rad(deg: float) -> float:
     return
 
 
-def intersect(c1: Circle, c2: Circle):
-    # Define a function to calculate whether two circles intersect
+# Define a function to calculate whether two circles intersect
+def intersect(c1: Circle, c2: Circle) -> bool:
     return
 
 
-def overlap(s1: Sphere, s2: Sphere):
-    # given a sphere of radius R located at (0, 0, 0) and
-    # a sphere or radius r located at (d, 0, 0)
-    # return the volume of the two spheres intersection
+# given a sphere of radius R located at (0, 0, 0) and
+# a sphere or radius r located at (d, 0, 0)
+# return the volume of the two spheres intersection
+def overlap(s1: Sphere, s2: Sphere) -> float:
     return
 
 
+# given three spheres, find the intersection
+# points of the three spheres
 def trilateration():
-    # given three spheres, find the intersection
-    # points of the three spheres
     return

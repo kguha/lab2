@@ -67,8 +67,9 @@ bob = Employee(name='Bob', department='IT', salary=10000, is_remote=True)
 ```
 ## Defining your functions
 - First open `lab2`
-- notice how the function full_name(first, mid, last) is defined
-- fill in the code to define the function is_even
+- Notice how the function `full_name` is defined
+    - Can you explain what is happening to the given Strings  
+- Fill in the code to define the function `is_even`
     - What operators do you need?
 - Define the Position NamedTuple to represent the coordinates of a sphere
 - Now define the volume of a sphere
@@ -80,18 +81,29 @@ bob = Employee(name='Bob', department='IT', salary=10000, is_remote=True)
     - To speed up your calculation, how would you account for the case in which r=R?
         - How would you implement this?
 - Take some time to attempt to implement the other functions such as `contained_within` and `trilateration`
+    - Hint: Notice that the parameters and return type for `trilateration` are empty
+        - What would you fill in for the parameters and return given the description of what the function
+        does in the comments. This one may be hard, so try to figure out what inputs and outputs the function
+        would take. You don't have to attempt to implement it
     - Hint: you can google 'True range multilateration' or 'trilateration'
-    - What is `contained_within` returning? A str, bool, int?
-
+    - What is `intersect` returning?
+        - How do we input two circles and receive the correct output?
 
 ## Testing your functions
-We will be writing 
-From the configuration drop-down (in the toolbar, just to the left of the run button),
-choose either “Add Configuration…” or “Edit Configurations…” (whichever is available). 
-In the window that opens, click the + sign in the upper left, find the “Python Tests” submenu, 
-and select the “pytest” option. It's possible to change the configuration Target to “Custom.” 
-Leave all the blank fields blank, and click OK. Now, the configuration you just created 
-(probably named “pytest”) show appear in the configuration drop-down. Select and run it. 
-If all goes well, you will see a summary of the passed tests, but if a test fails, 
-pytest will print more information about what went wrong. Try modifying the examples 
-in `test_lab` to see what a failing test looks like.
+After you have written a few functions and are ready to move on, we will be writing basic assertion tests.
+
+Assertions are statements that assert or verify computations in your program. They are boolean expressions that evaluate to true or not. 
+
+If the assertion is true, the program does nothing; however, if the assertion is false, the program stops and throws an error. 
+
+Because assertions can stop a program and print a message, they may be useful to showing where program errors have occured.
+
+Python has a built-in `assert` statement
+```
+assert <condition>
+```
+```
+assert <condition>,<error message>
+```
+
+If the assert evaluates the false the Python program halts and gives us an `AssertionError`
