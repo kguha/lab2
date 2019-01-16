@@ -15,5 +15,5 @@ def test_deg_to_rad():
     assert isclose(deg_to_rad(r), 2 * pi)
 
 
-def test_is_even():
+def test_is_even_again():
     assert is_even(422) == True
