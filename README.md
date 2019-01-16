@@ -2,9 +2,10 @@
 
 [Lab 1]:
     https://github.com/eecs230/lab1#testing-that-everything-works
-
+[wolfram]:
+    http://mathworld.wolfram.com/Sphere-SphereIntersection.html
 This repository includes existing code that will test your understanding
-Python arithmetic and algebra as well as help you define your own functions.
+of Python arithmetic and algebra as well as help you define your own functions.
 Start by forking it to your own account and then cloning your
 fork in PyCharm. Lab 1 includes [instructions][Lab 1] on how to do this,
 so you should refer there if you do not remember how. (You can also
@@ -17,7 +18,7 @@ configure your Python environment. When it's settled down, you'll
 be ready to move on. If you need help at any time, please ask your
 Peer Mentors John Nguyen and Yingliao Wang.
 
-Please review the following concepts from lecture 2 before starting this lab
+Please review the following concepts from lecture 2 before starting this lab:
 * Numbers, strings, booleans, and operations on those
 * Tuples
 * Defining and using your own functions
@@ -46,14 +47,37 @@ x or y	        # Returns y if x is False, x otherwise
 * Addition:   8 + 5
 * Subtraction: 8 - 5
 * Multiplication 8 * 5
-* Division 8 / 5
+* Division: 8 / 5
 * Floor Division: 8 // 5
-* Exponent 8 ** 5
-* Modulus 8 % 5
+* Exponent: 8 ** 5
+* Modulus: 8 % 5
 
+## A quick review of tuples
+Named tuples allow us to define data classes with type hinting. To create a named tuple,
+use the following syntax:
+```
+from typing import NamedTuple  # >= Python.3.6.0
+
+class Employee(NamedTuple):
+  name: str
+  department: str
+  salary: int
+  is_remote: bool = False  # >= Python.3.6.1
+    
+bob = Employee(name='Bob', department='IT', salary=10000, is_remote=True)
+```
 ## Defining your functions
 1. First open `lab2`
-    - notice how 
+2. notice how the function full_name(first, mid, last) is defined
+3. fill in the code to define the function is_even
+    - What operators do you need?
+4. Define the Position NamedTuple to represent the coordinates of a sphere
+5. Now define the volume of a sphere
+    - Does order of operations matter? 
+    - What arithmetic operations do you need?
+6. Now look at the overlap function [equation on WolframMathWorld][wolfram]
+http://mathworld.wolfram.com/Sphere-SphereIntersection.html
+
 
 ## Testing your functions
 
