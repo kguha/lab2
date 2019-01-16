@@ -66,10 +66,10 @@ class Employee(NamedTuple):
 bob = Employee(name='Bob', department='IT', salary=10000, is_remote=True)
 ```
 ## Defining your functions
-- First open `lab2`
-- Notice how the function `full_name` is defined
+1. First open `lab2`
+2. Notice how the function `full_name` is defined
     - Can you explain what is happening to the given Strings  
-- Fill in the code to define the function `is_even`
+3. Fill in the code to define the function `is_even`
     - What operators do you need?
 - Define the Position NamedTuple to represent the coordinates of a sphere
 - Now define the volume of a sphere
@@ -85,7 +85,7 @@ bob = Employee(name='Bob', department='IT', salary=10000, is_remote=True)
         - What would you fill in for the parameters and return given the description of what the function
         does in the comments. This one may be hard, so try to figure out what inputs and outputs the function
         would take. You don't have to attempt to implement it
-    - Hint: you can google 'True range multilateration' or 'trilateration'
+        - Hint: you can google 'True range multilateration' or 'trilateration'
     - What is `intersect` returning?
         - How do we input two circles and receive the correct output?
 
@@ -107,3 +107,14 @@ assert <condition>,<error message>
 ```
 
 If the assert evaluates the false the Python program halts and gives us an `AssertionError`
+
+Reference the short tests already written in `test_lab2`,
+write some short assertion tests to verify that you program works. Run the
+following command in the `lab2` directory to run your tests. 
+```
+$ pipenv run pytest
+```
+If you encounter any errors you may have the wrong version of Python
+
+Let us know if you have any questions. Once you've successfully written some
+tests you are free to leave. 
