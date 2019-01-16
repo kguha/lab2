@@ -48,7 +48,8 @@ Please ask your Peer Mentors if you have any questions
 
 
 def is_even(num: int) -> bool:
-    """Define a function that successfully tells you if your integer is odd or even or divisible by your age
+    """Define a function that successfully tells you if your integer is
+    odd or even or divisible by your age
     Return true if your number is even and"""
     return False
 

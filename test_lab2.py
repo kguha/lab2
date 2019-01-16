@@ -7,7 +7,9 @@ def test_is_even():
 
 
 def test_full_name():
-    assert full_name('Abraham', 'The', 'Lincoln') == 'AbrahamTheLincoln','this is not the lincoln'
+    actual = full_name('Abraham', 'The', 'Lincoln')
+    expected = 'AbrahamTheLincoln'
+    assert actual == expected,'this is not the lincoln'
 
 
 def test_deg_to_rad():
