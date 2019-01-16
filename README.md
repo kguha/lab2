@@ -2,8 +2,7 @@
 
 [Lab 1]:
     https://github.com/eecs230/lab1#testing-that-everything-works
-[wolfram]:
-    http://mathworld.wolfram.com/Sphere-SphereIntersection.html
+    
 This repository includes existing code that will test your understanding
 of Python arithmetic and algebra as well as help you define your own functions.
 Start by forking it to your own account and then cloning your
@@ -67,20 +66,26 @@ class Employee(NamedTuple):
 bob = Employee(name='Bob', department='IT', salary=10000, is_remote=True)
 ```
 ## Defining your functions
-1. First open `lab2`
-2. notice how the function full_name(first, mid, last) is defined
-3. fill in the code to define the function is_even
+- First open `lab2`
+- notice how the function full_name(first, mid, last) is defined
+- fill in the code to define the function is_even
     - What operators do you need?
-4. Define the Position NamedTuple to represent the coordinates of a sphere
-5. Now define the volume of a sphere
+- Define the Position NamedTuple to represent the coordinates of a sphere
+- Now define the volume of a sphere
     - Does order of operations matter? 
     - What arithmetic operations do you need?
-6. Now look at the overlap function [equation on WolframMathWorld][wolfram]
-http://mathworld.wolfram.com/Sphere-SphereIntersection.html
+- Now look at the `overlap` function 
+    - What exactly is it asking you to define? Look at this [WolframMathWorld](http://mathworld.wolfram.com/Sphere-SphereIntersection.html)
+    for some hints
+    - To speed up your calculation, how would you account for the case in which r=R?
+        - How would you implement this?
+- Take some time to attempt to implement the other functions such as `contained_within` and `trilateration`
+    - Hint: you can google 'True range multilateration' or 'trilateration'
+    - What is `contained_within` returning? A str, bool, int?
 
 
 ## Testing your functions
-
+We will be writing 
 From the configuration drop-down (in the toolbar, just to the left of the run button),
 choose either “Add Configuration…” or “Edit Configurations…” (whichever is available). 
 In the window that opens, click the + sign in the upper left, find the “Python Tests” submenu, 

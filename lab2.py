@@ -2,6 +2,7 @@ from math import pi
 
 from typing import NamedTuple
 
+from geometry import *
 
 
 
@@ -13,28 +14,10 @@ def full_name(first: str, mid: str, last: str):
 
 
 
-def str_len(string: str):
-    # Define a function that calculates the length of a string
-    print("Type your code here")
-    return string
-
-
-
-
-def is_even(num: int):
-    # Define a function that successfully tells you if your number is odd or even or divisible by your age
-    # Return true if your number is even and
-    return
-
-
-
-def deg_to_rad(deg: float):
-    # Define a function to convert degree to radian.
-    return
-
-
-def calc_vol(radius: float):
-    return
+#
+# We will implement a Position and
+# Sphere Tuple
+#
 
 
 class Position(NamedTuple):
@@ -61,6 +44,28 @@ class Sphere(NamedTuple):
         # your code goes here
         return 4 * pi * self.radius ** 2
 
+#
+# Here we will define your own functions
+# Please ask your Peer Mentors if you have any questions
+#
+
+
+def is_even(num: int):
+    # Define a function that successfully tells you if your number is odd or even or divisible by your age
+    # Return true if your number is even and
+    return
+
+
+
+def deg_to_rad(deg: float):
+    # Define a function to convert degrees to radian.
+    return
+
+
+def intersect(c1: Circle, c2: Circle):
+    # Define a function to calculate whether two circles intersect
+    return
+
 
 def overlap(s1: Sphere, s2: Sphere):
     # given a sphere of radius R located at (0, 0, 0) and
@@ -68,5 +73,8 @@ def overlap(s1: Sphere, s2: Sphere):
     # return the volume of the two spheres intersection
     return
 
-def tangent(blah):
+
+def trilateration():
+    # given three spheres, find the intersection
+    # points of the three spheres
     return
