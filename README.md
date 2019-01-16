@@ -98,12 +98,11 @@ If the assertion is true, the program does nothing; however, if the assertion is
 
 Because assertions can stop a program and print a message, they may be useful to showing where program errors have occured.
 
-Python has a built-in `assert` statement
+Python has a built-in `assert` statement:
+
 ```
 assert <condition>
-```
-```
-assert <condition>,<error message>
+assert <condition>, <error message>
 ```
 
 If the assert evaluates the false the Python program halts and gives us an `AssertionError`
