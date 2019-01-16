@@ -1,21 +1,22 @@
-from lab2 import *
 from math import isclose, pi
 
+from lab2 import *
 
-def test_is_even():
+
+# This is what a failing test looks like.
+def test_test():
     assert False == True, "Number is odd"
 
 
 def test_full_name():
     actual = full_name('Abraham', 'The', 'Lincoln')
-    expected = 'AbrahamTheLincoln'
+    expected = 'Abraham The Lincoln'
     assert actual == expected, 'this is not the lincoln'
 
 
 def test_deg_to_rad():
-    r = deg_to_rad(359.99999)
-    assert isclose(deg_to_rad(r), 2 * pi)
+    assert isclose(deg_to_rad(359.99999999999), 2 * pi)
 
 
-def test_is_even_again():
+def test_is_even():
     assert is_even(422) == True
