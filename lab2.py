@@ -14,10 +14,9 @@ def full_name(first: str, mid: str, last: str) -> str:
 
 
 
-"""""
-We will implement a Position and
-Sphere Tuple
-"""
+# We will implement a Position and
+# Sphere Tuple
+
 
 class Position(NamedTuple):
     # Represents a 3-D position.
