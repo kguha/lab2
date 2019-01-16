@@ -21,7 +21,8 @@ def full_name(first: str, mid: str, last: str):
     return full
 
 # Define a function that successfully tells you if your number is odd or even or divisible by your age
-def odd_or_even(num: int):
+# Return true if your number is even and
+def is_even(num: int):
     return
 
 # Define a function to convert degree to radian.
