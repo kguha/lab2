@@ -19,8 +19,9 @@ def full_name(first: str, mid: str, last: str) -> str:
 
 
 class Position3(NamedTuple):
-    # Represents a 3-D position.
-    x: float
+    """Represents a 3-D position."""
+    pass
+    # Your code here
 
 
 class Sphere(NamedTuple):
